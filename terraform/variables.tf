@@ -13,8 +13,14 @@ variable "visibility" {
   type        = string
 }
 
-variable "github_organization" {
-    description = "Sets the owner of the Git Space"
-    type = string
-    default = "neumi86"
+variable "github_owner" {
+  description = "Sets the owner of the Git Space"
+  type        = string
+  default     = "neumi86"
+}
+
+variable "github_token" {
+  type        = string
+  description = "Token auf Repo"
+  sensitive   = true
 }
