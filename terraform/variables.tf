@@ -12,3 +12,9 @@ variable "visibility" {
   description = "Var for visibility"
   type        = string
 }
+
+variable "github_organization" {
+    description = "Sets the owner of the Git Space"
+    type = string
+    default = "neumi86"
+}
