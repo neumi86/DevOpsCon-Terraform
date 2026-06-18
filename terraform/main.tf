@@ -1,5 +1,5 @@
 resource "github_repository" "repo" {
-    name = "MyFirstRepo"
-    description = "Cool stuff"
-    visibility = "public"
+  name        = var.repo_name
+  description = var.description
+  visibility  = var.visibility
 }
